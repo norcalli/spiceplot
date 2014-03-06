@@ -77,8 +77,8 @@ i(v2) = 0.004411873942866134
 i(v1) = -0.0044118739428661395
 ```
 
-![](http://norcalli.com/spiceplot/oscillator-all-voltage.svg)
-![](http://norcalli.com/spiceplot/oscillator-all-current.svg)
+![](http://norcalli.com/github/oscillator-all-voltage.svg)
+![](http://norcalli.com/github/oscillator-all-current.svg)
 ---
 ```
 ngspice -b examples/oscillator.net -r examples/oscillator.raw >/dev/null
@@ -104,4 +104,4 @@ i(v2) = 0.004411873942866134
 i(v1) = -0.0044118739428661395
 ```
 
-![](http://norcalli.com/spiceplot/oscillator-variable.svg)
+![](http://norcalli.com/github/oscillator-variable.svg)
