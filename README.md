@@ -1,6 +1,8 @@
 spiceplot
 =========
 
+###Binaries available at [releases!](https://github.com/norcalli/spiceplot/releases)
+
 A program written in Go and using plotinum that interprets raw spice files and produces pretty plots in __.svg, .png, .jpg, .jpeg, .eps, .tiff, .pdf__ formats.
 
 ##Features:
@@ -11,6 +13,12 @@ A program written in Go and using plotinum that interprets raw spice files and p
 - Plotting expressions
 - Complex variables
 - Calculating expressions better
+
+#Compilation:
+##Requires:
+- Plotinum
+- bc (for expressions)
+- My `rawspice` library.
 
 #Usage:
 
