@@ -1,0 +1,23 @@
+*CMOS Ring Oscillator example
+  
+V1 vdd 0 3V
+V2 vss 0 0V
+
+.subckt inv vdd vss in out
+ Mp1 vdd in out vdd pch l=0.35u w=20.0u
+ Mn1 vss in out vss nch l=0.35u w=10.0u
+ Cload out vss 100f
+.ends
+
+*5 stage ring
+x1 vdd vss 1 2 inv
+x2 vdd vss 2 3 inv
+x3 vdd vss 3 4 inv
+x4 vdd vss 4 5 inv
+x5 vdd vss 5 1 inv
+
+.MODEL nch NMOS
+.MODEL pch PMOS
+
+.TRAN 10p 4n
+.end

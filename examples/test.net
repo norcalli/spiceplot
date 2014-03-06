@@ -1,0 +1,11 @@
+*RC Filter Transient example
+  
+V1 in 0 sin(0 1 1e6)
+R1 in out 50k
+C1 out 0 10p
+  
+.TRAN 10n 10u
+
+.plot tran v(in) v(out)
+
+.end

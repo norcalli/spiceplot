@@ -1,0 +1,19 @@
+HW4
+
+vcc cc 0 2.5
+r1 cc c 1k
+r2 e 0 400
+
+
+r3 cc b 13k
+r4 b 0 12k
+cb b 0 10000000000
+
+cin in e 1000
+vin in 0 0
+
+Q1 c b e testbjt
+
+.MODEL testbjt NPN (BF=100 IS=.8F)
+.op
+.tf v(c) vin

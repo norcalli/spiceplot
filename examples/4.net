@@ -1,0 +1,18 @@
+*HW4
+
+v1 vdd 0 2.5V
+rc vdd c 885.6
+re e 0 177
+
+.MODEL testbjt NPN (BF=100 IS=1F)
+
+Q1 c b e testbjt
+
+vin b bias 0
+vbias bias 0 0.94
+
+.tf v(c) vin
+.op
+*.dc v1 0 20 2
+*.tran 1u 10m
+.end

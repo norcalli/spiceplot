@@ -1,0 +1,14 @@
+*HW3.2b
+
+v1 vdd 0 2V
+vb vdd b 0v
+
+.MODEL testbjt NPN (BF=150 IS=1F)
+
+Q1 vdd b e testbjt
+R1 e 0 1k
+
+.op
+*.dc v1 0 20 2
+*.tran 1u 10m
+.end
