@@ -32,7 +32,7 @@ Possible flags:
 ```
 
 ##Examples:
-In the examples, I am using `ngspice`. You can use `./testobot.sh examples/2b` to automatically generate plots with ngspice.
+In the examples, I am using `ngspice`. You can use `./testobot.sh examples/2b` to automatically generate plots with ngspice. I've also provided some `.raw` files under `examples` to play with which were generated from ngspice.
 
 ---
 
