@@ -16,7 +16,7 @@ A program written in Go and using plotinum that interprets raw spice files and p
 
 ##Installation with Go:
 
-```
+```bash
 go get github.com/norcalli/spiceplot
 ```
 
@@ -42,10 +42,12 @@ In the examples, I am using `ngspice`. You can use `./testobot.sh examples/2b` t
 
 ---
 
-```
+```bash
 ngspice -b examples/2b.net -r examples/2b.raw >/dev/null
+
 ./spiceplot -e 'v(b)-v(e)' examples/2b.raw examples/2b.svg
-rm examples/2b.raw
+
+#rm examples/2b.raw
 ```
 
 Output:
@@ -60,10 +62,10 @@ v(b)-v(e) = 0.7208721386828312
 ```
 
 ---
-```
+```bash
 ngspice -b examples/oscillator.net -r examples/oscillator.raw >/dev/null
+
 ./spiceplot examples/oscillator.raw examples/oscillator.svg
-rm examples/oscillator.raw
 ```
 
 Output:
@@ -86,10 +88,10 @@ i(v1) = -0.0044118739428661395
 ![](http://norcalli.com/github/oscillator-all-voltage.svg)
 ![](http://norcalli.com/github/oscillator-all-current.svg)
 ---
-```
+```bash
 ngspice -b examples/oscillator.net -r examples/oscillator.raw >/dev/null
+
 ./spiceplot -v 'i(v1)' examples/oscillator.raw examples/oscillator.svg
-rm examples/oscillator.raw
 ```
 
 Output:
