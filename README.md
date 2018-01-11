@@ -1,11 +1,11 @@
 spiceplot
 =========
 
-###Binaries available at [releases!](https://github.com/norcalli/spiceplot/releases)
+### Binaries available at [releases!](https://github.com/norcalli/spiceplot/releases)
 
 A program written in Go and using plotinum that interprets raw spice files and produces pretty plots in __.svg, .png, .jpg, .jpeg, .eps, .tiff, .pdf__ formats.
 
-###Features:
+### Features:
 - Plotting specific variables
 - Calculating expressions
 
@@ -14,7 +14,7 @@ A program written in Go and using plotinum that interprets raw spice files and p
 - Complex variables
 - Calculating expressions better
 
-##Installation with Go:
+## Installation with Go:
 
 ```bash
 go get github.com/norcalli/spiceplot
@@ -22,11 +22,11 @@ go get github.com/norcalli/spiceplot
 
 This will install `spiceplot` into your `bin` directory for your Go installation.
 
-###Requires:
+### Requires:
 - `bc` for expressions. This will be removed eventually.
 - Uses `plotinum` and my `rawspice` package, but those are automatically installed.
 
-##Usage:
+## Usage:
 
 ```
 Usage: ./spiceplot [flags] <rawfile> <output>
@@ -37,7 +37,7 @@ Possible flags:
   -v="": Comma separated string of variables to plot
 ```
 
-##Examples:
+## Examples:
 In the examples, I am using `ngspice`. You can use `./testobot.sh examples/2b` to automatically generate plots with ngspice. I've also provided some `.raw` files under `examples` to play with which were generated from ngspice.
 
 ---
